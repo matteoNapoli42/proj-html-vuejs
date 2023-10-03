@@ -16,12 +16,18 @@ export default {
                 "ABOUT",
                 "CONTACTS",
                 "GALLERY",
-                "SHOP"//DROPDOWN index 7
+                "SHOP",//DROPDOWN index 6
             ],
 
             socialItems: [
+                "src/assets/img/navSearch.svg",
+                "|",
+                "src/assets/img/navFacebook.svg",
+                "src/assets/img/navTwitter.svg",
+                "src/assets/img/navYoutube.svg",
+                "src/assets/img/navInstagram.svg",
+            ]
 
-            ],
 
         }
     }
@@ -31,7 +37,7 @@ export default {
 <template>
     <div class="d-flex align-items-center justify-content-around px-5" id="app_header">
         <div class="col-3">
-            asdfafa
+            <img src="src/assets/img/logo.svg" alt="" style="width: 190px;">
         </div>
         <div class="col-6 ">
             <ul class="d-flex justify-content-evenly">
@@ -40,7 +46,10 @@ export default {
 
         </div>
         <div class="col-3">
-            <HeaderSocial />
+            <ul class="d-flex justify-content-evenly">
+                <HeaderSocial v-for="(elem) in socialItems" :item="elem" />
+            </ul>
+
         </div>
     </div>
 </template>

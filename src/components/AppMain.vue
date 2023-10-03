@@ -4,17 +4,17 @@ import MainArticles from './MainArticles.vue';
 import MainJumbo from './MainJumbo.vue';
 import MainQuotes from './MainQuotes.vue';
 import MainTeam from './MainTeam.vue';
-import MainWWD from './MainWWD.vue';
+import MainCard from './MainCard.vue';
 import MainBestHits from './MainBestHits.vue';
 import MainShowcase from './MainShowcase.vue';
-import MainTech from './MainTech.vue'
-import MainSubmit from './MainSubmit.vue'
+import MainTech from './MainTech.vue';
+import MainSubmit from './MainSubmit.vue';
 
 export default {
     name: "AppMain",
     components: {
         MainJumbo,
-        MainWWD,
+        MainCard,
         MainAbout,
         MainBestHits,
         MainTeam,
@@ -23,6 +23,13 @@ export default {
         MainShowcase,
         MainTech,
         MainSubmit
+    },
+    data() {
+        return {
+            wwdItems: {
+
+            }
+        }
     }
 }
 </script>
@@ -33,7 +40,7 @@ export default {
         <MainJumbo />
     </section>
     <section>
-        <MainWWD />
+        <MainCard />
     </section>
     <section>
         <MainAbout />

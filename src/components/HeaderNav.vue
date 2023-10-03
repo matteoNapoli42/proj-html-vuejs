@@ -9,12 +9,17 @@ export default {
 </script>
 <template>
     <li>
-        <a href="" :class="[(index === 2 || index === 6) ? 'menuVoice' : '']">{{ menuItem }}</a>
+        <a href="">
+            {{ menuItem }}
+            <img v-if="index == 2 || index == 6" src="src/assets/img/navDownArrow.svg" alt="" class="dropdown">
+        </a>
+
     </li>
 </template>
 <style scoped>
-.menuVoice::after {
-    content: "<i class=" fa-solid fa-caret-down"></i>";
+.dropdown {
+    width: 11px;
+    height: 10px;
 }
 
 a {

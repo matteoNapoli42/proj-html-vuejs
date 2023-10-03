@@ -1,7 +1,14 @@
 <script>
 export default {
-    name: "HeaderSocial"
+    name: "HeaderSocial",
+    props: {
+        item: String,
+    }
 }
 </script>
-<template></template>
+<template>
+    <li>
+        <a href=""><img :src=item alt="" style="width: 21px; height: 22px;"></a>
+    </li>
+</template>
 <style></style>

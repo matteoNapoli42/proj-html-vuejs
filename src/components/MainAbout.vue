@@ -18,7 +18,7 @@ export default {
                 voluptas iusto.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ipsa rem dolore et, quam sint obcaecati,
                 dolorem quibusdam nam, dolor unde odio cumque porro veniam quidem incidunt illo! Amet, ab.</p>
-            <button class="btn btn-light w-25 py-2">READ MORE</button>
+            <button class="btn btn-light w-25 py-2 rounded-0">READ MORE</button>
         </div>
     </div>
 </template>

@@ -4,11 +4,6 @@ export default {
 }
 </script>
 <template>
-    <div id="articles"></div>
+    <div></div>
 </template>
-<style>
-#articles {
-    height: 800px;
-    background-color: salmon;
-}
-</style>
+<style></style>

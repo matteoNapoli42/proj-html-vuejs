@@ -20,7 +20,7 @@ export default {
                     <input type="mail" placeholder="Your Email" class="formWidth border-0 bg-grey  p-2 ">
                     <input type="text" placeholder="Mobile Number" class="formWidth  border-0 bg-grey  p-2 mt-5">
                     <input type="text" placeholder="Your Pincode" class="formWidth  border-0 bg-grey  p-2 mt-5">
-                    <textarea class="col-12 mt-5 bg-grey border-0" placeholder="Enter Your Message"
+                    <textarea class="col-12 mt-5 bg-grey border-0 p-2" placeholder="Enter Your Message"
                         style="min-height: 199px;"></textarea>
                     <button class="btn btn-dark col-12 mt-3 rounded-0">Submit Now</button>
                 </div>

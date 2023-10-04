@@ -1,19 +1,40 @@
 <script>
 export default {
     name: "MainCard",
+    props: {
+        item: Object,
+    }
 }
 </script>
 <template>
-    <div id="card" class="container">
-        <div class="col-12 text-center">
-            <span>minititolo</span>
-            <h3>Titolone</h3>
-        </div>
+    <div :class="$attrs.class">
+        <img :src="item.img" alt="">
+        <h4>{{ item.title }}</h4>
+        <span>
+            {{ item.message }}
+        </span>
     </div>
 </template>
+
 <style>
-#card {
-    height: 824px;
-    background-color: red;
+.wwdStyle {
+    width: calc(100% / 12 * 4);
+    margin-top: 53px;
 }
+
+.wwdStyle img {
+    width: 80px;
+    height: 78px;
+    margin-bottom: 40px;
+}
+
+.wwdStyle h4 {
+    margin-bottom: 15px;
+}
+
+.bestHStyle {}
+
+.teamStyle {}
+
+.articleStyle {}
 </style>

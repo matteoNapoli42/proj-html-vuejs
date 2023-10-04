@@ -29,7 +29,7 @@ export default {
 #results {
     height: 315px;
     background-image: url(src/assets/img/Parallax-01.jpg);
-    background-position: right;
+    background-position-y: 80%;
     background-size: cover;
 }
 

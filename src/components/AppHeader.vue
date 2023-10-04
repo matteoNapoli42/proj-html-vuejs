@@ -40,7 +40,7 @@ export default {
             <img src="src/assets/img/logo.svg" alt="" style="width: 190px;">
         </div>
         <div class="col-6 ">
-            <ul class="d-flex justify-content-evenly">
+            <ul class="d-flex justify-content-around">
                 <HeaderNav v-for="(elem, index) in navItems" :menuItem="elem" :index="index" />
             </ul>
 

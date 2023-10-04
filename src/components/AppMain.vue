@@ -9,6 +9,7 @@ import MainBestHits from './MainBestHits.vue';
 import MainShowcase from './MainShowcase.vue';
 import MainTech from './MainTech.vue';
 import MainSubmit from './MainSubmit.vue';
+import MainResult from './MainResult.vue';
 
 export default {
     name: "AppMain",
@@ -22,7 +23,8 @@ export default {
         MainArticles,
         MainShowcase,
         MainTech,
-        MainSubmit
+        MainSubmit,
+        MainResult
     },
     data() {
         return {
@@ -49,7 +51,7 @@ export default {
         <MainBestHits />
     </section>
     <section>
-        <MainShowcase />
+        <MainResult />
     </section>
     <section>
         <MainTeam />

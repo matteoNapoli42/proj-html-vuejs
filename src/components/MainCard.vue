@@ -4,8 +4,8 @@ export default {
 }
 </script>
 <template>
-    <div id="card" class="">
-        <div class="col-12">
+    <div id="card" class="container">
+        <div class="col-12 text-center">
             <span>minititolo</span>
             <h3>Titolone</h3>
         </div>

@@ -32,9 +32,31 @@ export default {
     margin-bottom: 15px;
 }
 
-.bestHStyle {}
+.bestHStyle {
+    width: calc((100% / 3) - 15px);
+    margin-top: 53px;
+}
 
-.teamStyle {}
+.bestHStyle img {
+    width: 100%;
+}
+
+.bestHStyle h4 {
+    margin-top: 30px;
+}
+
+.teamStyle {
+    width: calc((100% / 4) - 15px);
+}
+
+.teamStyle img {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.teamStyle h4 {
+    margin-top: 30px;
+}
 
 .articleStyle {}
 </style>

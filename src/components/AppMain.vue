@@ -68,8 +68,66 @@ export default {
 
             bestHItems: [
                 {
+                    img: 'src/assets/img/Gallery-01.jpg',
+                    title: 'SEVENTEENTH SUMMER',
+                    message: 'Commercial Music Video',
+                },
 
-                }
+                {
+                    img: 'src/assets/img/Gallery-02.jpg',
+                    title: 'A MESSAGE TO SPACE',
+                    message: 'Short Film',
+                },
+
+                {
+                    img: 'src/assets/img/Gallery-03.jpg',
+                    title: 'THE MOST BEAUTIFUL THING',
+                    message: 'Music Video',
+                },
+
+                {
+                    img: 'src/assets/img/Gallery-04.jpg',
+                    title: 'PERMISSION TO SPEAK',
+                    message: 'Documentary',
+                },
+
+                {
+                    img: 'src/assets/img/Gallery-05.jpg',
+                    title: 'EXPLORE OUR SPACE',
+                    message: 'Film noir',
+                },
+
+                {
+                    img: 'src/assets/img/Gallery-06.jpg',
+                    title: 'FILM PRODUCTION',
+                    message: 'Blaxploitation',
+                },
+            ],
+
+            teamItems: [
+                {
+                    title: 'FABRICIO GUERRA',
+                    message: 'Main Director',
+                    img: 'src/assets/img/Team-01.jpg'
+                },
+
+                {
+                    title: 'UMBERTO PAGODA',
+                    message: 'Main Writer',
+                    img: 'src/assets/img/Team-02.jpg'
+                },
+
+                {
+                    title: 'GLORIA RICCASSO',
+                    message: 'Main Producer',
+                    img: 'src/assets/img/Team-03.jpg'
+                },
+
+                {
+                    title: 'LIO NAPOIN',
+                    message: 'Cameraman',
+                    img: 'src/assets/img/Team-04.jpg'
+                },
             ]
         }
     }
@@ -84,7 +142,7 @@ export default {
 
 
     <!--What We DO-->
-    <section class="text-center" id="whatWD">
+    <section class="text-center cardPadding" id="whatWD">
         <span>PELICULA STUDIO</span>
         <h1>THIS IS WHAT WE DO</h1>
         <div class="container d-flex flex-wrap">
@@ -96,9 +154,12 @@ export default {
         <MainAbout />
     </section>
 
-
-    <section class="" id=" bestHits">
-        <MainBestHits />
+    <section class="text-center cardPadding" id="bestHits">
+        <span>YOUR WATCHLIST</span>
+        <h1>BEST HITS MOVIES</h1>
+        <div class=" container d-flex flex-wrap justify-content-between">
+            <MainCard v-for="(elem) in bestHItems" :item="elem" class="bestHStyle" />
+        </div>
     </section>
 
 
@@ -107,8 +168,13 @@ export default {
     </section>
 
 
-    <section class="" id="team">
-        <MainTeam />
+    <section class="text-center cardPadding" id="team">
+        <span>THE PERICUROS</span>
+        <h1>MEET THE TEAM</h1>
+        <div class=" container d-flex flex-wrap justify-content-between">
+            <MainCard v-for="(elem) in  teamItems" :item="elem" class="teamStyle" />
+        </div>
+
     </section>
 
 
@@ -117,7 +183,9 @@ export default {
     </section>
 
 
-    <section id="articles">
+    <section class="text-center cardPadding" id="articles">
+        <span>LATEST NEWS</span>
+        <h1>ARTICLES UPDATED DAILY</h1>
         <MainArticles />
     </section>
 
@@ -140,21 +208,22 @@ export default {
 
 #whatWD {
     height: 824px;
-    padding-top: 121px;
 }
 
 #bestHits {
     height: 1200px;
-    background-color: violet;
 }
 
 #team {
     height: 822px;
-    background-color: aqua;
 }
 
 #articles {
     height: 800px;
     background-color: salmon;
+}
+
+.cardPadding {
+    padding: 120px 0 120px 0;
 }
 </style>

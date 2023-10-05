@@ -126,16 +126,19 @@ export default {
 
             articlesItems: [
                 {
+                    data: 'November 06, 2021 By Admin',
                     img: 'src/assets/img/article1.jpg',
                     title: 'RECAP YOUR LATEST COMPANY EVENT',
                     message: 'Suspendisse dictum dictum tempor. Ut non faucibus arcu, id elementum est. Suspendisse sed',
                 },
                 {
+                    data: 'May 27, 2022 By Admin',
                     img: 'src/assets/img/article2.jpg',
                     title: 'HOW TO EDIT A FILM SCORE TO SERVE',
                     message: ' Lorem ipsum dolor sit amet consectetur adipisicing elit.',
                 },
                 {
+                    data: 'May 07, 2022 by Admin',
                     img: 'src/assets/img/article3.jpg',
                     title: 'ARE YOU READY TO MAKE IT AWESOME',
                     message: 'Design is our playground. While we create an awesome experience, we like having fun. No animals',
@@ -148,7 +151,7 @@ export default {
 
 <template>
     <!--Jumbotron-->
-    <section id="jumbo" class=" px-2">
+    <section id="jumbo" class="">
         <MainJumbo />
     </section>
 
@@ -215,9 +218,11 @@ export default {
 </template>
 
 <style lang="scss">
+@use '../assets/scss/partials/variables.scss' as *;
+
 #jumbo {
+    background-color: $cinema_primary ;
     height: 800px;
-    background-color: black;
 }
 
 #whatWD {

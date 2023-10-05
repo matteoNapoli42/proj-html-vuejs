@@ -18,12 +18,18 @@ export default {
     <header>
         <AppHeader />
     </header>
-    <main>
+
+    <main class="p-left">
         <AppMain />
     </main>
+
     <footer>
         <AppFooter />
     </footer>
 </template>
 
-<style ></style>
+<style scoped >
+.p-left {
+    padding-left: 13px;
+}
+</style>

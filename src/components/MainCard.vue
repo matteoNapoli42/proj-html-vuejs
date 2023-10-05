@@ -9,10 +9,14 @@ export default {
 <template>
     <div :class="$attrs.class">
         <img :src="item.img" alt="">
-        <h4>{{ item.title }}</h4>
-        <span>
-            {{ item.message }}
-        </span>
+        <div>
+            <span v-if="item.data !== undefined" class=" text-start">{{ item.data }}</span>
+            <h4>{{ item.title }}</h4>
+
+            <span>
+                {{ item.message }}
+            </span>
+        </div>
     </div>
 </template>
 
@@ -69,7 +73,7 @@ export default {
 }
 
 .articleStyle h4 {
-    margin-top: 30px;
+    margin-top: 10px;
     font-size: medium;
 }
 

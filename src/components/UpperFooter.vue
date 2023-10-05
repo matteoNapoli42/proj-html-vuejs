@@ -32,4 +32,12 @@ h3 {
     text-align: start;
     margin-bottom: 28px;
 }
+
+span {
+    opacity: 0.8;
+}
+
+span:hover {
+    opacity: 1;
+}
 </style>

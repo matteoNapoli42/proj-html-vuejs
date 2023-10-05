@@ -35,26 +35,26 @@ export default {
 </script>
 
 <template>
-    <div class="d-flex align-items-center justify-content-around px-5" id="app_header">
-        <div class="col-3">
+    <div class="d-flex align-items-center justify-content-between px-5" id="app_header">
+        <div class="col-2 text-start">
             <img src="src/assets/img/logo.svg" alt="" style="width: 190px;">
         </div>
-        <div class="col-6 ">
-            <ul class="d-flex justify-content-around">
+        <div class="col-4">
+            <ul class="d-flex justify-content-between">
                 <HeaderNav v-for="(elem, index) in navItems" :menuItem="elem" :index="index" />
             </ul>
 
         </div>
-        <div class="col-3">
-            <ul class="d-flex justify-content-evenly">
-                <HeaderSocial v-for="(elem) in socialItems" :item="elem" />
+        <div class="col-2">
+            <ul class="d-flex justify-content-around myP">
+                <HeaderSocial v-for="(elem, index) in socialItems" :item="elem" :index="index" />
             </ul>
 
         </div>
     </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use '../assets/scss/partials/variables.scss' as *;
 
 #app_header {
@@ -66,5 +66,7 @@ export default {
 ul {
     list-style: none;
 }
+
+.myP {}
 </style>
 

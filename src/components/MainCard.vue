@@ -58,5 +58,23 @@ export default {
     margin-top: 30px;
 }
 
-.articleStyle {}
+.articleStyle {
+    width: calc((100% / 3) - 15px);
+}
+
+.articleStyle img {
+    width: 100%;
+    margin-top: 30px;
+    text-align: left
+}
+
+.articleStyle h4 {
+    margin-top: 30px;
+    font-size: medium;
+}
+
+.articleStyle h4,
+span {
+    text-align: start;
+}
 </style>

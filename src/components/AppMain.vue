@@ -128,6 +128,24 @@ export default {
                     message: 'Cameraman',
                     img: 'src/assets/img/Team-04.jpg'
                 },
+            ],
+
+            articlesItems: [
+                {
+                    img: 'src/assets/img/article1.jpg',
+                    title: 'RECAP YOUR LATEST COMPANY EVENT',
+                    message: 'Suspendisse dictum dictum tempor. Ut non faucibus arcu, id elementum est. Suspendisse sed',
+                },
+                {
+                    img: 'src/assets/img/article2.jpg',
+                    title: 'HOW TO EDIT A FILM SCORE TO SERVE',
+                    message: ' Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+                },
+                {
+                    img: 'src/assets/img/article3.jpg',
+                    title: 'ARE YOU READY TO MAKE IT AWESOME',
+                    message: 'Design is our playground. While we create an awesome experience, we like having fun. No animals',
+                },
             ]
         }
     }
@@ -186,7 +204,9 @@ export default {
     <section class="text-center cardPadding" id="articles">
         <span>LATEST NEWS</span>
         <h1>ARTICLES UPDATED DAILY</h1>
-        <MainArticles />
+        <div class=" container d-flex flex-wrap justify-content-between">
+            <MainCard v-for="(elem) in  articlesItems" :item="elem" class="articleStyle" />
+        </div>
     </section>
 
 
@@ -220,7 +240,6 @@ export default {
 
 #articles {
     height: 800px;
-    background-color: salmon;
 }
 
 .cardPadding {

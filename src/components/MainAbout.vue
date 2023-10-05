@@ -9,7 +9,7 @@ export default {
 
         </div>
         <div class="col-6 text-white d-flex flex-column gap-3" id="about-text">
-            <span>ABOUT US</span>
+            <span style=" color: white;">ABOUT US</span>
             <h1>HIGH QUALITY CINEMATICS</h1>
             <p style="line-height: 220%;">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, et maxime enim laborum deserunt

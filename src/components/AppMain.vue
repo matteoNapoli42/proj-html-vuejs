@@ -1,11 +1,8 @@
 <script>
 import MainAbout from './MainAbout.vue';
-import MainArticles from './MainArticles.vue';
 import MainJumbo from './MainJumbo.vue';
 import MainQuotes from './MainQuotes.vue';
-import MainTeam from './MainTeam.vue';
 import MainCard from './MainCard.vue';
-import MainBestHits from './MainBestHits.vue';
 import MainShowcase from './MainShowcase.vue';
 import MainTech from './MainTech.vue';
 import MainSubmit from './MainSubmit.vue';
@@ -17,10 +14,7 @@ export default {
         MainJumbo,
         MainCard,
         MainAbout,
-        MainBestHits,
-        MainTeam,
         MainQuotes,
-        MainArticles,
         MainShowcase,
         MainTech,
         MainSubmit,
@@ -244,5 +238,9 @@ export default {
 
 .cardPadding {
     padding: 120px 0 120px 0;
+}
+
+span {
+    font-size: small;
 }
 </style>

@@ -12,17 +12,18 @@ export default {
         <a href="" :class="{ 'dropdown_navEl': index == 2 }">
             {{ menuItem }}
             <img v-if="index == 2 || index == 6" src="src/assets/img/navDownArrow.svg" alt="" class="dropdown">
+            <div v-if="index == 2" class="dropdown_menu ">
+                <ul>
+                    <li><a href="">SERVICES</a></li>
+                    <li><a href="">OUR WORK FLOW</a></li>
+                    <li><a href="">VIDEO THUMBNAIL TYPE</a></li>
+                </ul>
+            </div>
         </a>
-        <div v-if="index == 2" class="dropdown_menu ">
-            <ul>
-                <li><a href="">SERVICES</a></li>
-                <li><a href="">OUR WORK FLOW</a></li>
-                <li><a href="">VIDEO THUMBNAIL TYPE</a></li>
-            </ul>
-        </div>
+
     </li>
 </template>
-<style scoped>
+<style  lang="scss" scoped>
 .dropdown {
     width: 11px;
     height: 10px;
@@ -33,24 +34,25 @@ a {
     color: black;
 }
 
-.dropdown_navEl {
-    position: relative;
-}
+.dropdown_navEl {}
 
 
-.dropdown_navEl:hover .dropdown_menu {
-    display: block !important;
-    z-index: 1 !important;
+.dropdown_navEl:hover {
+    .dropdown_menu {
+        display: block !important;
+        z-index: 1 !important;
+    }
+
 }
 
 .dropdown_menu {
     display: none;
-    position: relative;
+    position: absolute;
     top: 7%;
     left: 43%;
     width: 250px;
     background-color: black;
-    z-index: 0;
+    z-index: 1;
 }
 
 .dropdown_menu a {

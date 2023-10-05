@@ -9,11 +9,17 @@ export default {
 </script>
 <template>
     <li>
-        <a href="">
+        <a href="" :class="{ 'dropdown_navEl': index == 2 }">
             {{ menuItem }}
             <img v-if="index == 2 || index == 6" src="src/assets/img/navDownArrow.svg" alt="" class="dropdown">
         </a>
-
+        <div v-if="index == 2" class="dropdown_menu ">
+            <ul>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">OUR WORK FLOW</a></li>
+                <li><a href="">VIDEO THUMBNAIL TYPE</a></li>
+            </ul>
+        </div>
     </li>
 </template>
 <style scoped>
@@ -25,5 +31,40 @@ export default {
 a {
     text-decoration: none;
     color: black;
+}
+
+.dropdown_navEl {
+    position: relative;
+}
+
+
+.dropdown_navEl:hover .dropdown_menu {
+    display: block !important;
+    z-index: 1 !important;
+}
+
+.dropdown_menu {
+    display: none;
+    position: relative;
+    top: 7%;
+    left: 43%;
+    width: 250px;
+    background-color: black;
+    z-index: 0;
+}
+
+.dropdown_menu a {
+    color: white;
+}
+
+.dropdown_menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.dropdown_menu li {
+    list-style: none;
+    border: 1px solid grey;
+    padding: 5px 0px 10px 10px;
 }
 </style>

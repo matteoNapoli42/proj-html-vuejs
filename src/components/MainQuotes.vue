@@ -23,7 +23,7 @@ export default {
         </div>
     </div>
 </template>
-<style>
+<style scoped>
 #quotes {
     height: 600px;
     background-image: url(src/assets/img/Parallax-02.jpg);

@@ -6,7 +6,7 @@ export default {
 <template>
     <div id="about" class="d-flex">
         <div class="col-6">
-            sadasdadsfadfss
+
         </div>
         <div class="col-6 text-white d-flex flex-column gap-3" id="about-text">
             <span>ABOUT US</span>

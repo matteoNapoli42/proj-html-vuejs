@@ -165,6 +165,7 @@ export default {
         </div>
     </section>
 
+    <!--About-->
     <section>
         <MainAbout />
     </section>
@@ -177,12 +178,12 @@ export default {
         </div>
     </section>
 
-
+    <!--Results-->
     <section>
         <MainResult />
     </section>
 
-
+    <!--Meet the Team-->
     <section class="text-center cardPadding" id="team">
         <span>THE PERICUROS</span>
         <h1>MEET THE TEAM</h1>
@@ -192,12 +193,12 @@ export default {
 
     </section>
 
-
+    <!--Quotes-->
     <section>
         <MainQuotes />
     </section>
 
-
+    <!--Our Articles-->
     <section class="text-center cardPadding" id="articles">
         <span>LATEST NEWS</span>
         <h1>ARTICLES UPDATED DAILY</h1>
@@ -206,12 +207,12 @@ export default {
         </div>
     </section>
 
-
+    <!--Tech-->
     <section>
         <MainTech />
     </section>
 
-
+    <!--Work with US-->
     <section>
         <MainSubmit />
     </section>
@@ -247,5 +248,11 @@ export default {
 
 span {
     font-size: small;
+}
+
+h1,
+span {
+    font-weight: bold;
+    font-weight: bold;
 }
 </style>

@@ -33,11 +33,10 @@ h3 {
     margin-bottom: 28px;
 }
 
-span {
-    opacity: 0.8;
-}
+
 
 span:hover {
-    opacity: 1;
+
+    color: white;
 }
 </style>

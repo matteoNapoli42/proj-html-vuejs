@@ -9,10 +9,9 @@ export default {
 <template>
     <div :class="$attrs.class">
         <img :src="item.img" alt="">
-        <div>
-            <span v-if="item.data !== undefined" class=" text-start">{{ item.data }}</span>
+        <div :class="{ 'date_style': item.data !== undefined }">
+            <span v-if="item.data !== undefined" class="date_padding mt-3">{{ item.data }}</span>
             <h4>{{ item.title }}</h4>
-
             <span>
                 {{ item.message }}
             </span>
@@ -20,7 +19,9 @@ export default {
     </div>
 </template>
 
-<style>
+<style lang="scss">
+@use '../assets/scss/partials/variables.scss' as *;
+
 .wwdStyle {
     width: calc(100% / 12 * 4);
     margin-top: 53px;
@@ -80,5 +81,22 @@ export default {
 .articleStyle h4,
 span {
     text-align: start;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+span {
+    color: $cinema_tertiary;
+}
+
+.date_padding {
+    padding-right: 55%;
+}
+
+.date_style {
+    display: flex;
+    flex-direction: column;
 }
 </style>

@@ -17,7 +17,7 @@ export default {
                     <div class="col-8">
                         <h5>CINEMATO STUDIO</h5>
                         <h1>ACTION AND <br> INSPIRE PEOPLE</h1>
-                        <button class="btn btn-light px-4 rounded-0 mt-3">READ MORE</button>
+                        <button class="btn btn-light px-4 text rounded-0 mt-3">READ MORE</button>
                     </div>
                     <div class="col-1 text-end">
                         <button class="btn_color"><img src="src/assets/img/right-arrow.svg" alt="" class="arrow">
@@ -50,6 +50,7 @@ img {
 
 h1 {
     font-size: 300%;
+    font-weight: bold;
 }
 
 .btn_color {
